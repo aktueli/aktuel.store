@@ -1,35 +1,94 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><span class="html-doctype">&lt;!DOCTYPE html&gt;</span>
-</td></tr><tr><td class="line-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;html&gt;</span>
-</td></tr><tr><td class="line-number" value="3"></td><td class="line-content"><span class="html-tag">&lt;head&gt;</span>
-</td></tr><tr><td class="line-number" value="4"></td><td class="line-content"><span class="html-tag">&lt;meta <span class="html-attribute-name">charset</span>="<span class="html-attribute-value">utf-8</span>"&gt;</span>
-</td></tr><tr><td class="line-number" value="5"></td><td class="line-content"><span class="html-tag">&lt;title&gt;</span>Random Posts<span class="html-tag">&lt;/title&gt;</span>
-</td></tr><tr><td class="line-number" value="6"></td><td class="line-content"><span class="html-tag">&lt;meta <span class="html-attribute-name">content</span>='<span class="html-attribute-value">width=device-width, initial-scale=1</span>' <span class="html-attribute-name">name</span>='<span class="html-attribute-value">viewport</span>'&gt;</span>
-</td></tr><tr><td class="line-number" value="7"></td><td class="line-content"><span class="html-tag">&lt;style&gt;</span>
-</td></tr><tr><td class="line-number" value="8"></td><td class="line-content">body {
-</td></tr><tr><td class="line-number" value="9"></td><td class="line-content">  background-color:transparent;
-</td></tr><tr><td class="line-number" value="10"></td><td class="line-content">  margin:0;
-</td></tr><tr><td class="line-number" value="11"></td><td class="line-content">  padding:0;
-</td></tr><tr><td class="line-number" value="12"></td><td class="line-content">  overflow:hidden;
-</td></tr><tr><td class="line-number" value="13"></td><td class="line-content">}
-</td></tr><tr><td class="line-number" value="14"></td><td class="line-content">iframe{border:0;}
-</td></tr><tr><td class="line-number" value="15"></td><td class="line-content"><span class="html-tag">&lt;/style&gt;</span>
-</td></tr><tr><td class="line-number" value="16"></td><td class="line-content"><span class="html-tag">&lt;script&gt;</span>
-</td></tr><tr><td class="line-number" value="17"></td><td class="line-content">function getQueryVariable(variable) {
-</td></tr><tr><td class="line-number" value="18"></td><td class="line-content">	var query = window.location.search.substring(1);
-</td></tr><tr><td class="line-number" value="19"></td><td class="line-content">	var vars = query.split("&amp;");
-</td></tr><tr><td class="line-number" value="20"></td><td class="line-content">	for (var i=0;i&lt;vars.length;i++) {
-</td></tr><tr><td class="line-number" value="21"></td><td class="line-content">		var pair = vars[i].split("=");
-</td></tr><tr><td class="line-number" value="22"></td><td class="line-content">		if(pair[0] == variable){return pair[1];}
-</td></tr><tr><td class="line-number" value="23"></td><td class="line-content">	}
-</td></tr><tr><td class="line-number" value="24"></td><td class="line-content">	return(false);
-</td></tr><tr><td class="line-number" value="25"></td><td class="line-content">}
-</td></tr><tr><td class="line-number" value="26"></td><td class="line-content">var domain = getQueryVariable("url");
-</td></tr><tr><td class="line-number" value="27"></td><td class="line-content">var colorlink = getQueryVariable("color");
-</td></tr><tr><td class="line-number" value="28"></td><td class="line-content"><span class="html-tag">&lt;/script&gt;</span>
-</td></tr><tr><td class="line-number" value="29"></td><td class="line-content"><span class="html-tag">&lt;/head&gt;</span>
-</td></tr><tr><td class="line-number" value="30"></td><td class="line-content"><span class="html-tag">&lt;body&gt;</span>
-</td></tr><tr><td class="line-number" value="31"></td><td class="line-content"><span class="html-tag">&lt;script&gt;</span>
-</td></tr><tr><td class="line-number" value="32"></td><td class="line-content">document.write('&lt;iframe src="https://feed.mikle.com/widget/v2/?widget_parameter=%7B%22type%22%3A%22%22%2C%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2F'+domain+'%2Ffeeds%2Fposts%2Fdefault%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A%22470%22%2C%22height_by_article%22%3A0%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Arial%2C%20Helvetica%2C%20sans-serif%22%2C%22title_font_size%22%3A%2216%22%2C%22item_title_font_size%22%3A%2216%22%2C%22item_description_font_size%22%3A%2212%22%2C%22border%22%3A%22off%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22text_alignment%22%3A%22left%22%2C%22corner%22%3A%22square%22%2C%22scroll%22%3A%22on%22%2C%22auto_scroll%22%3A%22on%22%2C%22auto_scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%224%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22rnd%22%2C%22title%22%3A%22off%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%23505659%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23ffffff%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%22200%22%2C%22item_title_color%22%3A%22%23'+colorlink+'%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_description%22%3A%22both%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%22150%22%2C%22item_description_color%22%3A%22%23505659%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22%22%2C%22item_description_style%22%3A%22thumbnail%22%2C%22item_thumbnail%22%3A%22crop%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%229999%22%2C%22item_player%22%3A%22youtube%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D" scrolling="no" style="width:100%;height:520px;overflow:hidden;"/&gt;');
-</td></tr><tr><td class="line-number" value="33"></td><td class="line-content"><span class="html-tag">&lt;/script&gt;</span>
-</td></tr><tr><td class="line-number" value="34"></td><td class="line-content"><span class="html-tag">&lt;/body&gt;</span>
-</td></tr><tr><td class="line-number" value="35"></td><td class="line-content"><span class="html-tag">&lt;/html&gt;</span><span class="html-end-of-file"></span></td></tr></tbody></table></body></html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Random Post</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400italic,400,500,500italic,700,700italic,900%7CMaterial+Icons' rel='stylesheet' type='text/css'/>
+<style>
+body {
+  background-color:white;
+  margin:0;
+  padding:0;
+  color:#212121;
+}
+a{text-decoration:none}
+a:hover {color:#4588f3}
+/* Related post for AMP HTML */
+.related-post{font-family: Roboto, sans-serif;margin:0 0 25px -7px;padding:0;font-size:13px;text-align:left;box-sizing:border-box}
+.related-post,.related-post-style-3 .related-post-item{-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.related-post h4,h4.title-related{margin:20px 0 10px 7px!important;font-size:23px;font-weight:700;padding:0;color:#2d2d2d;text-align:left;position:relative;z-index:2}
+.related-post-style-3,.related-post-style-3 li{margin:0!important;padding:0!important;list-style:none;word-wrap:break-word;overflow:hidden}
+.related-post-style-3 .related-post-item{display:block;float:left;width:33.33%;height:180px;padding-left:7px!important;margin:0 0 4px!important;box-sizing:border-box}
+.related-post-style-3 .related-post-item-thumbnail{display:block;margin:0 0 7px;width:100%;height:110px;max-width:none;max-height:none;background-color:transparent;padding:0;}
+.related-post-style-3 .related-post-item-thumbnail:hover{-webkit-filter:brightness(0.4);transition:all 0.5s ease-out}
+.related-post-style-3 .related-post-item-tooltip{padding:0;margin:0;line-height:1.3em;overflow:hidden;text-overflow:ellipsis;display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+.related-post-style-3 .related-post-item-tooltip a.related-post-item-title{font-size:14px;font-weight:700;color:#555!important;text-decoration:none}
+.related-post-style-3 .related-post-item-tooltip a.related-post-item-title:hover,.related-post-style-3 .related-post-item:hover a{color:#4588f3!important}
+@media screen and (max-width:600px){
+.related-post{margin:0 auto;padding:0;}
+.related-post h4,h4.title-related{margin:15px 0 10px 0!important;}
+.related-post-style-3 .related-post-item{height:auto;padding:0!important;margin:0 0 10px!important;display:block;width:100%}
+.related-post-style-3 .related-post-item-thumbnail{height:50px;width:90px;margin:0 10px 0 0;float:left;display:inline-block;overflow:hidden}
+.related-post-style-3 .related-post-item-tooltip a.related-post-item-title{font-size:12px;}
+}
+</style>
+</head>
+<body>
+
+<div id="related-post" class="related-post"></div>
+<script>
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if(pair[0] == variable){return pair[1];}
+  }
+  return(false);
+}
+var labelArray = [],
+    relatedPostConfig = {
+		homePage: getQueryVariable("url"),
+        numPosts: 6,
+        summaryLength: 0,
+        widgetStyle: 3,
+        callBack: function() {
+            var $container = $('#' + this.containerId + ' > ul'),
+                $list = $container.find('li'),
+                innerHeight = $list.first().height(),
+                outerHeight = $list.first().outerHeight(true);
+            // Container & list height setup
+            $container.css({
+                "height": outerHeight * $list.length / 2,
+                "overflow": "hidden"
+            });
+            $list.css({
+                "height": innerHeight,
+                "overflow": "hidden"
+            });
+            // Animation
+            function newsTicker() {
+                window.setTimeout(function() {
+                    $container.find('li:last').stop().animate({
+                        opacity: 0
+                    }, 100000, function() {
+                        $(this).hide().prependTo($container).slideDown(1000, function() {
+                            $(this).stop().animate({
+                                opacity: 1
+                            }, 100000, newsTicker);
+                        });
+                    });
+                }, 300000);
+            } newsTicker();
+        }
+    };
+</script>
+<script>
+/*! Related Post Widget for Blogger by Taufik Nurrohman => http://gplus.to/tovic */
+var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>Benzer Yazılar</h4>",widgetStyle:3,homePage:"http://www.aktuel.store/",numPosts:6,summaryLength:370,titleLength:"auto",thumbnailSize:300,noImage:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAA3NCSVQICAjb4U/gAAAADElEQVQImWOor68HAAL+AX7vOF2TAAAAAElFTkSuQmCC",containerId:"related-post",newTabLink:false,moreText:"Baca Selengkapnya",callBack:function(){}};for(var f in relatedPostConfig){d[f]=(relatedPostConfig[f]=="undefined")?d[f]:relatedPostConfig[f]}var j=function(a){var b=m.createElement("script");b.type="text/javascript";b.src=a;k.appendChild(b)},o=function(b,a){return Math.floor(Math.random()*(a-b+1))+b},l=function(a){var p=a.length,c,b;if(p===0){return false}while(--p){c=Math.floor(Math.random()*(p+1));b=a[p];a[p]=a[c];a[c]=b}return a},e=(typeof labelArray=="object"&&labelArray.length>0)?"/-/"+l(labelArray)[0]:"",h=function(b){var c=b.feed.openSearch$totalResults.$t-d.numPosts,a=o(1,(c>0?c:1));j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&start-index="+a+"&max-results="+d.numPosts+"&callback=showRelatedPost")},g=function(z){var s=document.getElementById(d.containerId),x=l(z.feed.entry),A=d.widgetStyle,c=d.widgetTitle+'<ul class="related-post-style-'+A+'">',b=d.newTabLink?' target="_blank"':"",y='<span style="display:block;clear:both;"></span>',v,t,w,r,u;if(!s){return}for(var q=0;q<d.numPosts;q++){if(q==x.length){break}t=x[q].title.$t;w=(d.titleLength!=="auto"&&d.titleLength<t.length)?t.substring(0,d.titleLength)+"&hellip;":t;r=("media$thumbnail"in x[q]&&d.thumbnailSize!==false)?x[q].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, "/s"+d.thumbnailSize):d.noImage;u=("summary"in x[q]&&d.summaryLength>0)?x[q].summary.$t.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"").replace(/[<>]/g,"").substring(0,d.summaryLength)+"&hellip;":"";for(var p=0,a=x[q].link.length;p<a;p++){v=(x[q].link[p].rel=="alternate")?x[q].link[p].href:"#"}if(A==2){c+='<li><a href="'+v+'" title="'+t+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"></a><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+'</a><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+'</span> <a href="'+v+'" class="related-post-item-more"'+b+">"+d.moreText+"</a></span>"+y+"</li>"}else{if(A==3||A==4){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-title" href="'+v+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"></a><div class="related-post-item-tooltip"><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+"</a></div>"+y+"</li>"}else{if(A==5){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-wrapper" href="'+v+'" title="'+t+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"><span class="related-post-item-tooltip">'+w+"</span></a>"+y+"</li>"}else{if(A==6){c+='<li><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+'</a><div class="related-post-item-tooltip"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+"</span></span>"+y+"</div></li>"}else{c+='<li><a title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+"</a></li>"}}}}}s.innerHTML=c+="</ul>"+y;d.callBack()};randomRelatedIndex=h;showRelatedPost=g;j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&max-results=0&callback=randomRelatedIndex")})(window,document,document.getElementsByTagName("head")[0]);
+</script>
+
+</body>
+</html>
