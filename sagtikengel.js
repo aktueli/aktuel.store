@@ -1,3 +1,11 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript Ders 2</title>
+<script type="text/javascript" src="script.js" language="javascript">
+</script>
+ 
+<script>
 <script language=javascript>
 function clickIE() {if (document.all) {(message);return false;}}
 function clickNS(e) {if
@@ -8,3 +16,9 @@ if (document.layers)
 else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
 document.oncontextmenu=new Function("return false")
 </script>
+</script>
+</head>
+<body>
+ 
+</body>
+</html>
