@@ -1,4 +1,4 @@
-<script language=’JavaScript1.2'>
+<script language=â€™JavaScript1.2â€²>
 //Disable select-text script (IE4+, NS6+)- By Andy Scott
 //Exclusive permission granted to Dynamic Drive to feature script
 //Visit http://www.dynamicdrive.com for this script
@@ -16,7 +16,7 @@ document.onmousedown=disableselect
 document.onclick=reEnable
 }
 </script>
-<script language=’JavaScript’>curPage=1;
+<script language=â€™JavaScriptâ€™>curPage=1;
 document.oncontextmenu = function(){return false}
 if(document.layers) {
 window.captureEvents(Event.MOUSEDOWN);
